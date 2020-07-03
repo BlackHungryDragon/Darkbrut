@@ -16,9 +16,9 @@ login = input(" Телефон :")
 url ="https://vk.com/"
 
 print("[ Номер телефона| Работает | Пароль ]")
-f=open("passwords","r")
-f.read()
-for passwor in f:
+f=open("passwords.txt","r")
+lines=f.readlines()
+for passwor in lines:
    password.append(passwor)
 f.close
 for passw in password:
